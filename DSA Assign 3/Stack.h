@@ -4,22 +4,22 @@
 #include <iostream>
 using namespace std;
 
-struct StackNode 
+struct StackNode
 {
     int data;
     StackNode* next;
 };
 
-class Stack 
+class Stack
 {
 private:
     StackNode* top;
 public:
     Stack();
     ~Stack();
-    void push(int value);
-    int pop();
-    int peek();
+    void iAs(int value);
+    int dAs();
+    int axis();
     bool isEmpty();
     void display();
 };
