@@ -1,35 +1,35 @@
 #include "queue.h"
 
-Queue::Queue() 
+Queue::Queue()
 {
     front = rear = nullptr;
 }
 
-Queue::~Queue() 
+Queue::~Queue()
 {
-    while (!isEmpty()) 
+    while (!isEmpty())
     {
-        dequeue();
+        dAe();
     }
 }
 
-void Queue::enqueue(int value) 
+void Queue::iAe(int value)
 {
     QueueNode* newNode = new QueueNode{ value, nullptr };
-    if (rear) 
+    if (rear)
     {
         rear->next = newNode;
     }
     rear = newNode;
-    if (!front) 
+    if (!front)
     {
         front = newNode;
     }
 }
 
-int Queue::dequeue() 
+int Queue::dAe()
 {
-    if (isEmpty()) 
+    if (isEmpty())
     {
         cout << "Queue underflow!" << endl;
         return -1;
@@ -37,7 +37,7 @@ int Queue::dequeue()
     QueueNode* temp = front;
     int value = temp->data;
     front = front->next;
-    if (!front) 
+    if (!front)
     {
         rear = nullptr;
     }
@@ -45,9 +45,9 @@ int Queue::dequeue()
     return value;
 }
 
-int Queue::peek() 
+int Queue::axis()
 {
-    if (isEmpty()) 
+    if (isEmpty())
     {
         cout << "Queue is empty!" << endl;
         return -1;
@@ -55,15 +55,15 @@ int Queue::peek()
     return front->data;
 }
 
-bool Queue::isEmpty() 
+bool Queue::isEmpty()
 {
     return front == nullptr;
 }
 
-void Queue::display() 
+void Queue::display()
 {
     QueueNode* temp = front;
-    while (temp) 
+    while (temp)
     {
         cout << temp->data << " ";
         temp = temp->next;
