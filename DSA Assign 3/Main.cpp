@@ -3,24 +3,23 @@
 #include <iostream>
 using namespace std;
 
-int main() 
+int main()
 {
     Stack stack;
     Queue queue;
     cout << "Stack operations:" << endl;
-    stack.push(10);
-    stack.push(20);
-    stack.push(30);
+    stack.iAs(10);
+    stack.iAs(20);
+    stack.iAs(30);
     stack.display();
-    cout << "Popped: " << stack.pop() << endl;
+    cout << "Deletion at start: " << stack.dAs() << endl;
     stack.display();
     cout << "\nQueue operations:" << endl;
-    queue.enqueue(100);
-    queue.enqueue(200);
-    queue.enqueue(300);
+    queue.iAe(100);
+    queue.iAe(200);
+    queue.iAe(300);
     queue.display();
-    cout << "Dequeued: " << queue.dequeue() << endl;
+    cout << "Deletion at end: " << queue.dAe() << endl;
     queue.display();
-
     return 0;
 }
