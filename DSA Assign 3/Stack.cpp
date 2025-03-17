@@ -1,27 +1,27 @@
 #include "stack.h"
 
-Stack::Stack() 
+Stack::Stack()
 {
     top = nullptr;
 }
 
-Stack::~Stack() 
+Stack::~Stack()
 {
-    while (!isEmpty()) 
+    while (!isEmpty())
     {
-        pop();
+        dAs();
     }
 }
 
-void Stack::push(int value) 
+void Stack::iAs(int value)
 {
     StackNode* newNode = new StackNode{ value, top };
     top = newNode;
 }
 
-int Stack::pop() 
+int Stack::dAs()
 {
-    if (isEmpty()) 
+    if (isEmpty())
     {
         cout << "Stack underflow!" << endl;
         return -1;
@@ -33,9 +33,9 @@ int Stack::pop()
     return value;
 }
 
-int Stack::peek() 
+int Stack::axis()
 {
-    if (isEmpty()) 
+    if (isEmpty())
     {
         cout << "Stack is empty!" << endl;
         return -1;
@@ -43,15 +43,15 @@ int Stack::peek()
     return top->data;
 }
 
-bool Stack::isEmpty() 
+bool Stack::isEmpty()
 {
     return top == nullptr;
 }
 
-void Stack::display() 
+void Stack::display()
 {
     StackNode* temp = top;
-    while (temp) 
+    while (temp)
     {
         cout << temp->data << " ";
         temp = temp->next;
