@@ -1,0 +1,28 @@
+#pragma once
+#ifndef QUEUE_H
+#define QUEUE_H
+#include <iostream>
+using namespace std;
+
+struct QueueNode 
+{
+    int data;
+    QueueNode* next;
+};
+
+class Queue 
+{
+private:
+    QueueNode* front;
+    QueueNode* rear;
+public:
+    Queue();
+    ~Queue();
+    void enqueue(int value);
+    int dequeue();
+    int peek();
+    bool isEmpty();
+    void display();
+};
+
+#endif
