@@ -4,13 +4,13 @@
 #include <iostream>
 using namespace std;
 
-struct QueueNode 
+struct QueueNode
 {
     int data;
     QueueNode* next;
 };
 
-class Queue 
+class Queue
 {
 private:
     QueueNode* front;
@@ -18,9 +18,9 @@ private:
 public:
     Queue();
     ~Queue();
-    void enqueue(int value);
-    int dequeue();
-    int peek();
+    void iAe(int value);
+    int dAe();
+    int axis();
     bool isEmpty();
     void display();
 };
