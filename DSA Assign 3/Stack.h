@@ -19,7 +19,7 @@ public:
     ~Stack();
     void iAs(int value);
     int dAs();
-    int axis();
+    int access();
     bool isEmpty();
     void display();
 };

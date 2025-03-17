@@ -20,7 +20,7 @@ public:
     ~Queue();
     void iAe(int value);
     int dAe();
-    int axis();
+    int access();
     bool isEmpty();
     void display();
 };

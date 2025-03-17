@@ -33,7 +33,7 @@ int Stack::dAs()
     return value;
 }
 
-int Stack::axis()
+int Stack::access()
 {
     if (isEmpty())
     {

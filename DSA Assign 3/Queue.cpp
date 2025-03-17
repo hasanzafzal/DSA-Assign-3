@@ -45,7 +45,7 @@ int Queue::dAe()
     return value;
 }
 
-int Queue::axis()
+int Queue::access()
 {
     if (isEmpty())
     {
